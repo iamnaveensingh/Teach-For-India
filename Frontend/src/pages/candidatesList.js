@@ -11,7 +11,7 @@ const CandidatesList = () => {
     try {
       // Sending a GET request to fetch the list of candidates
       const response = await axios.get(
-        `${process.env.REACT_APP_BACKEND_URL}api/candidatesList`,
+        `${process.env.REACT_APP_BACKEND_URL}/api/candidatesList`,
         { withCredentials: true }
       );
       // Updating the state with the received data
@@ -31,7 +31,7 @@ const CandidatesList = () => {
     setDisplay("");
     try {
       await axios.get(
-        `${process.env.REACT_APP_BACKEND_URL}allocation/allocate`,
+        `${process.env.REACT_APP_BACKEND_URL}/allocation/allocate`,
         {
           withCredentials: true,
         }
@@ -49,7 +49,7 @@ const CandidatesList = () => {
     setDisplay("");
     try {
       await axios.get(
-        `${process.env.REACT_APP_BACKEND_URL}allocation/unallocated`,
+        `${process.env.REACT_APP_BACKEND_URL}/allocation/unallocated`,
         {
           withCredentials: true,
         }

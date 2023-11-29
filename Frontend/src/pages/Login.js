@@ -19,7 +19,7 @@ const AdminLogin = () => {
     try {
       // Make a POST request to the server with the provided credentials
       const response = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}api/admin`,
+        `${process.env.REACT_APP_BACKEND_URL}/api/admin`,
         {
           email,
           password,

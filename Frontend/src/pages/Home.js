@@ -25,7 +25,7 @@ const HomePage = () => {
     try {
       // Sending a POST request to the server
       const response = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}api/register`,
+        `${process.env.REACT_APP_BACKEND_URL}/api/register`,
         data
       );
 

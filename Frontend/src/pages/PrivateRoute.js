@@ -15,7 +15,7 @@ const PrivateRoute = ({ children }) => {
       try {
         // Make an Axios GET request to the server to check the login status
         const response = await axios.get(
-          `${process.env.REACT_APP_BACKEND_URL}api/admin-loginstatus`,
+          `${process.env.REACT_APP_BACKEND_URL}/api/admin-loginstatus`,
           { withCredentials: true } // Include credentials for cross-origin requests
         );
 
