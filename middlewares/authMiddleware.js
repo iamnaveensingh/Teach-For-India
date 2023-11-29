@@ -1,5 +1,8 @@
 import jwt from "jsonwebtoken";
 import adminModel from "../model/adminModel.js";
+import cookieParser from "cookie-parser";
+
+app.use(cookieParser());
 
 export const auth = async (req, res, next) => {
   console.log(req.cookies.token)

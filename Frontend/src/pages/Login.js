@@ -48,12 +48,12 @@ const AdminLogin = () => {
       alert("Something went wrong");
     }
   };
-
   // Function to handle input changes and update state
   const onChange = (e) => {
     setData({ ...{ email, password }, [e.target.name]: e.target.value });
   };
-
+  
+  console.log(document.cookie.token,"cookiesss")
   // Render the login form
   return (
     <div className="bg-gray-50 dark:bg-gray-900">
