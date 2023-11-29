@@ -18,7 +18,7 @@ const app = express();
 // middleware
 app.use(
   cors({
-    origin: "https://teach-for-india-p5oi.vercel.app/",
+    origin: "https://teach-for-india-p5oi.vercel.app",
     credentials: true,
   })
 );
