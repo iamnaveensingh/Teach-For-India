@@ -71,7 +71,7 @@ const HomePage = () => {
       setData({ ...data, [e.target.name]: e.target.value });
     }
   };
-  console.log(process.env.REACT_APP_BACKEND_URL);
+
   return (
     <>
       <div className="bg-gray-50  py-2 dark:bg-gray-900">

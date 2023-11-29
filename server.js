@@ -6,8 +6,6 @@ import volunteerRoutes from "./routes/volunteerRoutes.js";
 import allocationController from "./routes/allocationRoute.js";
 import cookieParser from "cookie-parser";
 
-
-
 // config env
 dotenv.config();
 
@@ -18,13 +16,14 @@ connectDB();
 const app = express();
 
 // middleware
-app.use(cors({
-  origin: 'http://localhost:3000',
-  credentials: true,
-}));
+app.use(
+  cors({
+    origin: "https://teach-for-india-p5oi.vercel.app/",
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(cookieParser());
-
 
 // routes
 app.use("/api", volunteerRoutes);
