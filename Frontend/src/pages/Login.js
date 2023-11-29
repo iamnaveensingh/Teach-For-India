@@ -31,7 +31,7 @@ const AdminLogin = () => {
         // Set the authentication token in a cookie with an expiration time
         document.cookie = `token=${response.data.token}; expires=${new Date(
           Date.now() + 1000 * 86400
-        )}; path=/`;
+        )}; path=/; Secure; HttpOnly; SameSite=None`;
 
         // Display a success message and navigate to the "/candidatesList" route
 
@@ -54,6 +54,7 @@ const AdminLogin = () => {
   };
   
   console.log(document.cookie.token,"cookiesss")
+  console.log(document.cookie,"All cookiesss")
   // Render the login form
   return (
     <div className="bg-gray-50 dark:bg-gray-900">
