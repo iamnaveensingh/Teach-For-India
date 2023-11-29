@@ -18,9 +18,9 @@ function App() {
           <Route
             path="/admin"
             element={
-              <PublicRoutes>
+              // <PublicRoutes>
                 <AdminLogin />
-              </PublicRoutes>
+              // </PublicRoutes>
             }
           />
           <Route path="*" element={<PageNotFound />} />
