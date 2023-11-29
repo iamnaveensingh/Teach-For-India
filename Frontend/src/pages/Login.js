@@ -31,7 +31,7 @@ const AdminLogin = () => {
         // Set the authentication token in a cookie with an expiration time
         document.cookie = `token=${response.data.token}; expires=${new Date(
           Date.now() + 1000 * 86400
-        )}; path=/; Secure; HttpOnly; SameSite=None`;
+        )}; path=/`;
 
         // Display a success message and navigate to the "/candidatesList" route
 
